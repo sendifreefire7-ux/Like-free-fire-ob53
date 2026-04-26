@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNTIK LIKE FREE FIRE OB53 🔥 (SIMULASI)</title>
+
+<style>
+body {
+    background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+h1 { margin-top: 20px; }
+
+.notice {
+    background: rgba(255,0,0,0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>SUNTIK LIKE FREE FIRE OB53 🔥</h1>
+
+<div class="notice">
+⚠️ ingat 1 hari 1x jika lebih dan like tidak masuk kami tidak tangung jawab.
+</div>
+
+<input type="text" id="ffid" placeholder="Masukan ID Free Fire">
+
+<div class="container">
+
+<div class="card">
+<h2>❤️ 20 Likes</h2>
+<p>Rp 850</p>
+<button onclick="pilih(850)">Pilih</button>
+</div>
+
+<div class="card">
+<h2>❤️ 100 Likes</h2>
+<p>Rp 4.000</p>
+<button onclick="pilih(4000)">Pilih</button>
+</div>
+
+<div class="card">
+<h2>❤️ 220 Likes</h2>
+<p>Rp 8.500</p>
+<button onclick="pilih(8500)">Pilih</button>
+</div>
+
+<div class="card">
+<h2>❤️ 1000 Likes</h2>
+<p>Rp 16.000</p>
+<button onclick="pilih(16000)">Pilih</button>
+</div>
+
+</div>
+
+<button onclick="bayar()">Bayar via DANA</button>
+
+<script>
+let harga = 0;
+
+function pilih(h){
+    harga = h;
+    alert("Paket dipilih Rp " + h);
+}
+
+function bayar(){
+    let id = document.getElementById("ffid").value;
+
+    if(id == ""){
+        alert("Masukan ID dulu!");
+        return;
+    }
+
+    if(harga == 0){
+        alert("Pilih paket dulu!");
+        return;
+    }
+
+    let konfirmasi = confirm("Lanjut bayar Rp " + harga + " ?");
+    if(!konfirmasi) return;
+
+    let danaLink = "https://link.dana.id/send?phone=085788968747&amount=" + harga;
+
+    window.location.href = danaLink;
+}
+</script>
+
+</body>
+</html>
